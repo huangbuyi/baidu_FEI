@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务二十一：基础JavaScript练习（四）</title>
+    <style>
+        .showTags, .showHobbies{
+            margin: 5px 0;
+            min-height:50px;
+            width:400px;
+            flex-flow: row wrap;
+        }
+        .showTags > div, .showHobbies > div{
+            display: inline-block;
+            height:22px;
+            line-height: 22px;;
+            background: #ff6666;
+            padding: 0 10px;
+            color:#fff;
+            margin:5px;
+            font-size: 20px;
+            font-family: "黑体", "SimHei", "sans-serif";
+            border-radius: 5px;
+        }
+        .showTags > div.selected{
+            background: #6699ff;
+        }
+        .showTags > div.selected::before{
+            content: "删除 ";
+        }
+        .showHobbies > div{
+            background: #ffd083;
+        }
+    </style>
+</head>
+<body>
+<!--Prevent default enter key's submit event-->
+<form onsubmit="return false">
+    <label>Tags:</label>
+    <input type="text" name="tag"/>
+    <div class="showTags"></div>
+    <textarea name="hobby" cols="40" rows="6">足球，篮球&#10跳舞、唱歌&#10&#10lol 魔兽 守望先锋</textarea><br />
+    <input type="button" name="btn" value="确认兴趣爱好"/>
+    <div class="showHobbies"></div>
+</form>
+
+<script src="task_21.js"></script>
+</body>
+</html>

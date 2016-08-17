@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务二十五：JavaScript和树（四）</title>
+    <link rel="stylesheet" href="./styles/task_25.css"/>
+</head>
+<body>
+<div class="fileTree">
+    <input name="4bin-tree-search" type="text" />
+    <a data-type="dir" href="javascript:void(0)"><span></span><i></i>根标签</a>
+    <ul>
+        <li>
+            <a data-type="dir" href="javascript:void(0)"><span></span><i></i>子标签</a>
+            <ul>
+                <li>
+                    <a data-type="dir" href="javascript:void(0)"><span></span><i></i>子标签</a>
+                    <ul>
+                        <li> <a data-type="file" href="javascript:void(0)"><span></span><i></i>子标签1</a> </li>
+                        <li> <a data-type="file" href="javascript:void(0)"><span></span><i></i>子标签1</a> </li>
+                        <li> <a data-type="file" href="javascript:void(0)"><span></span><i></i>子标签1</a> </li>
+                    </ul>
+                </li>
+                <li> <a data-type="file" href="javascript:void(0)"><span></span><i></i>子标签1</a> </li>
+                <li> <a data-type="file" href="javascript:void(0)"><span></span><i></i>子标签1</a> </li>
+                <li> <a data-type="file" href="javascript:void(0)"><span></span><i></i>子标签1</a> </li>
+            </ul>
+        </li>
+        <li> <a data-type="file" href="javascript:void(0)"><span></span><i></i>子标签1</a> </li>
+        <li> <a data-type="file" href="javascript:void(0)"><span></span><i></i>子标签1</a> </li>
+    </ul>
+</div>
+<div class="contextMenu" style="display: none">
+    <ul>
+        <li>新建
+            <ul>
+                <li class="createDir">文件夹</li>
+                <li class="createFile">文件</li>
+            </ul>
+        </li>
+        <li class="cutFile">剪切</li>
+        <li class="copyFile">复制</li>
+        <li class="pasteFile"i>粘贴</li>
+        <li class="reName">重命名</li>
+        <li>折叠
+            <ul>
+                <li>折叠</li>
+                <li>展开</li>
+                <li>折叠全部</li>
+                <li>展开全部</li>
+            </ul>
+        </li>
+        <li>标记
+            <ul>
+                <li>颜色
+                    <ul>
+                        <li>红色</li>
+                        <li>黄色</li>
+                        <li>绿色</li>
+                    </ul>
+                </li>
+                <li>图形
+                    <ul>
+                        <li>三角形</li>
+                        <li>正方形</li>
+                        <li>圆形</li>
+                    </ul>
+                </li>
+                <li>清楚</li>
+                <li>清楚全部</li>
+            </ul>
+        </li>
+        <li class="deleteFile">删除</li>
+    </ul>
+</div>
+<script src="./scripts/task_25.js"></script>
+</body>
+</html>

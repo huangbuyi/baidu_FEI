@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务二十三：JavaScript和树（二）</title>
+    <style>
+        div{
+            font-size: 12px;
+            min-height:50px;
+            min-width:50px;;
+            margin: 7px;;
+            border: 1px solid #666;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+            color:#666;
+            background: #fff;
+        }
+        .traveling{
+            color:#fff;
+            background: #66ff99;
+        }
+        .matched{
+            color:#fff;
+            background: #ff6666;
+        }
+        .mouseOn{
+            background: #99ccff;
+            color:#fff;
+        }
+        .selected{
+            background: #6699ff;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+<input type="text" name="find" value="思明区"/>
+<input type="button" name="preOrder" value="前序查询"/>
+<input type="button" name="postOrder" value="后序查询"/><br /><br />
+<input type="text" name="addTxt">
+<input type="button" name="addNode" value="增加节点"/>
+<input type="button" name="delNode" value="删除节点"/>
+<div class="binTree">地区
+    <div>中国
+        <div>福建
+            <div>厦门
+                <div>思明区</div>
+                <div>湖里区</div>
+                <div>集美区</div>
+                <div>翔安区</div>
+            </div>
+            <div>泉州</div>
+            <div>三明
+                <div>清流县</div>
+            </div>
+            <div>福州</div>
+            <div>南平</div>
+            <div>宁德</div>
+            <div>漳州</div>
+            <div>龙岩</div>
+            <div>莆田</div>
+        </div>
+        <div>上海市</div>
+        <div>北京市</div>
+        <div>广东省
+            <div>广州市</div>
+            <div>深圳市</div>
+            <div>东莞市</div>
+        </div>
+        <div>西藏自治区</div>
+    </div>
+    <div>美国
+        <div>加州</div>
+        <div>佛州</div>
+        <div>宾州</div>
+        <div>夏威夷</div>
+        <div>阿拉斯加</div>
+    </div>
+
+</div>
+<script src="./scripts/task_24.js"></script>
+</body>
+</html>

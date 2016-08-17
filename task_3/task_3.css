@@ -1,0 +1,53 @@
+*{padding:0;margin:0;font-family:Arial, "Microsoft YaHei", "微软雅黑", sans-serif;}
+ul{  list-style: none; }
+a{text-decoration: none; }
+body{
+    padding: 20px;
+}
+img{
+    width:80px;
+    height:80px;
+    margin:20px;
+    border:1px solid #000;
+    display: block;
+}
+.container{
+    width:100%;
+    min-width: 650px;
+    border:1px solid #000;
+    background: #ccc;
+    display: inline-block;
+}
+.container div{
+    margin:20px;
+    border:1px solid #000;
+    background: #fff;
+}
+.container .left{
+    width:200px;
+    height:122px;
+    float:left;
+}
+.left img{
+    float:left;
+}
+.left p{
+    margin-top: 20px;
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+}
+.container .middle{
+    margin:20px 0;
+    width:calc(100% - 446px);
+    padding:20px;
+    float:left;
+}
+.middle p{
+    font-size: 14px;
+}
+.container .right{
+    width:120px;
+    height: 428px;
+    float:right;
+}

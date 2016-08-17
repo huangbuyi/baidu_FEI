@@ -1,0 +1,193 @@
+*{padding:0;margin:0;font-family:Arial, "Microsoft YaHei", "微软雅黑", sans-serif;}
+ul{  list-style: none; }
+a{text-decoration: none; }
+body{
+    background: #eee;
+}
+header{
+    height: 60px;
+    background-color: #333;
+}
+header h1{
+    float:left;
+    height:60px;
+    width:170px;
+    line-height: 60px;
+    background-image: url(./images/googlelogo.png);
+    background-size:120px 40px ;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+header nav{
+    float:right;
+}
+header nav li{
+    display: inline;
+}
+header nav a{
+    height:60px;
+    line-height:60px;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+header nav .active{
+    color: #999;
+}
+article, aside{
+    box-shadow:1px 1px 1px 1px #666;
+    margin:20px;
+    padding:20px;
+    background: #fff;
+}
+article h2{
+    height:60px ;
+    line-height: 60px;
+    color:#000;
+}
+article h4{
+    height:25px ;
+    line-height: 25px;
+    color:#999;
+}
+article p{
+    text-indent:2em;
+    font-size: 14px;
+    line-height: 26px;
+}
+article .autherAndtime{
+    text-indent: 0em;
+    height:42px;
+    line-height: 42px;
+    font-size: 12px;
+    color:#999;
+}
+article ul{
+    font-size: 14px;
+    line-height: 24px;
+    margin-left:15px;
+}
+article dl{
+    margin-left:40px;
+}
+article dd{
+    width:394px;
+    margin-top:15px;
+    border: 1px solid #999;
+    text-align: center;
+}
+article dd span{
+    width:394px;
+    line-height: 32px;
+    font-size: 12px;
+}
+article dd p{
+    width:394px;
+    line-height: 32px;
+    font-size: 12px;
+}
+article img{
+    margin:0px 10px 10px 10px;
+}
+article ol{
+    margin-left:35px;
+    font-size: 14px;
+}
+.tableTitle{
+    text-indent: 0;
+    line-height: 18px;
+    margin-top: 15px;
+}
+article table{
+    height: 20px;
+    width:100%;
+    line-height: 20px;
+    text-indent: 0.5em;
+    text-align: left;
+    border: 1px solid #999;
+    border-collapse: collapse;
+}
+article table th{
+    font-size: 13px;
+    font-weight: 400;
+    background: #333;
+    color: #fff;
+}
+article table td{
+    font-size: 12px;
+    background: #fff;
+    color: #000;
+}
+article table .tableTotal td{
+    font-weight: 600;
+    background: #999;
+}
+aside h4{
+    height:40px;
+    line-height: 20px;
+}
+aside h4::before{
+    position: relative;
+    top:5px;
+    content: "| ";
+    font-size: 40px;
+    font-weight: 300;
+    color: #ccc;
+}
+aside{
+}
+aside form{
+    font-size: 13px;
+    margin:20px 0 ;
+}
+aside label{
+    width:30%;
+    min-width: 140px;
+    height:24px;
+    line-height:24px;
+    font-size: 13px;
+    text-align: right;
+    display: inline-block;
+}
+aside p{
+    font-size: 11px;
+    color:#ccc;
+    margin-left: calc(30% + 3px);
+}
+aside input{
+    font-size: 13px;
+    color:#bbb;
+}
+aside .tableOthers{
+    line-height: 32px;
+}
+aside textarea{
+    font-size: 13px;
+    color:#bbb;
+    width:40%;
+    height:100px;
+}
+aside .introduction{
+    float: left;
+}
+aside .submitButton{
+    height: 38px;
+    border-radius: 5px;
+    font-size: 16px;
+    background:#6699ff;
+    color: #fff;
+    width:100%;
+}
+
+footer{
+    background: #333;
+    height: 60px;
+}
+footer p{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 12px;
+    text-align: center;
+    color:#fff
+}

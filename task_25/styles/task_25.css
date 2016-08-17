@@ -1,0 +1,145 @@
+*{  margin:0;padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+body{
+
+}
+.fileTree{
+    width:200px;
+    height:800px;
+    font-size: 12px;
+    overflow: auto;
+    border:1px solid #000;
+    font-family: "黑体", "SimHei", "sans-serif";
+}
+.fileTree li{
+    min-height:22px;
+    word-break: keep-all;
+    padding-left: 20px;;
+}
+.fileTree a{
+    color:#333;
+    position: relative;
+    height:22px;
+    line-height:22px;
+    cursor:default;
+    word-break: keep-all;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+}
+.fileTree a:hover{
+    background: #d4d4d4;
+}
+.fileTree a:hover::before{
+    position: absolute;
+    display: inline-block;
+    content:"ss";
+    left:-9999px;
+    width:9999px;
+    background: #d4d4d4;
+}
+.fileTree a.selected{
+    color:#fff;
+    background: #3875d6;
+}
+.fileTree a.selected::before{
+    position: absolute;
+    display: inline-block;
+    content:"ss";
+    left:-9999px;
+    width:9999px;
+    background: #3875d6;
+}
+.fileTree span, .fileTree i{
+    display: inline-block;
+    //border:1px solid #666;
+    width:18px;
+    height:18px;
+    flex-shrink:0;
+    background: url(../images/file_tree_icon.png) no-repeat;
+    /*
+    background-position: -4px -4px;  dir
+    background-position: -26px -1px;   file
+      background-position: -0px -23px;   triangle left
+       background-position: -18px -22px; triangle down
+       background-position: -0px -41px; w triangle left
+        background-position: -18px -40px; w triangle down
+    */
+
+
+}
+.fileTree a[data-type = dir] span{
+    background-position: -18px -22px;
+    margin-right: 5px;
+}
+.fileTree a[data-type = dir].selected span{
+    background-position: -18px -40px
+}
+.fileTree a[data-type = dir] span.show{
+    background-position: -1px -24px;
+}
+.fileTree a[data-type = dir].selected span.show{
+    background-position: -0px -41px;
+}
+
+.fileTree a[data-type = dir] i{
+    background-position: -4px -4px;
+    margin-right: 2px;
+}
+
+.fileTree a[data-type = file] span{
+    background-position: -9999px -9999px;
+    margin-right: 5px;
+}
+.fileTree a[data-type = file] i{
+    background-position: -27px -1px;
+    margin-right: 2px;
+}
+.fileTree a u{
+    color:red;
+}
+
+
+.contextMenu{
+    display: inline;
+    position: absolute;
+    left:200px;
+    top:200px;
+}
+.contextMenu ul{
+    position: absolute;
+    background: #eee;
+    border:1px solid #999;
+    box-shadow: 5px 5px 3px -3px #666;
+}
+.contextMenu > ul{
+    width:200px;
+}
+.contextMenu > ul > li{
+    margin:2px 0;
+}
+.contextMenu > ul ul{
+    display: none;
+    right:-147px;
+    top:-2px;
+    width:150px;
+}
+.contextMenu ul.show{
+    display: block;
+    z-index: 1;
+}
+
+.contextMenu li{
+    padding-left: 20px;
+    height:22px;
+    line-height: 22px;
+    font-size: 12px;
+    color:#333;
+    position: relative;
+}
+.contextMenu .selected{
+    background: #3875d6;
+    color:#fff;
+}

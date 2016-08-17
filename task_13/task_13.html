@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>任务十三：零基础JavaScript编码（一）</title>
+</head>
+<body>
+
+<label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+<button id="button">确认填写</button>
+
+<div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+<script type="text/javascript">
+
+    (function() {
+        var btn = document.getElementById("button"),
+            input = document.getElementById("aqi-input"),
+            display = document.getElementById("aqi-display");
+
+        var displayTxt = function(str){
+            if( str.length === 0 ){
+                display.innerText = "尚无录入";
+            } else {
+                display.innerText = str;
+            }
+        }
+
+        btn.addEventListener("click", function(){
+            displayTxt(input.value);
+        })
+
+        input.addEventListener("keyup", function(){
+
+            // 检测松开的按键是否是enter键
+            if(event.keyCode === 13){
+                displayTxt(input.value);
+            }
+        })
+
+
+    })();
+
+</script>
+</body>
+</html>

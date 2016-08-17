@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务十九：基础JavaScript练习（二）</title>
+    <style>
+        form{
+            display: inline-block;
+        }
+        .aqi-display {
+            display: flex;
+            align-items: flex-end;
+        }
+        .aqi-display > div{
+            display: inline-block;
+            background: #ff6666;
+            padding: 10px;;
+            color:#fff;
+            margin:5px;
+            font-size: 18px;
+            font-family: "黑体", "SimHei", "sans-serif";
+        }
+    </style>
+</head>
+<body>
+<form id="aqi-opera">
+    <input type="text" id="aqi-input"/>
+    <button type="button" name="leftIn">左侧入</button>
+    <button type="button" name="rightIn">右侧入</button>
+    <button type="button" name="leftOut">左侧出</button>
+    <button type="button" name="rightOut">右侧出</button>
+</form>
+<form id="aqi-sort">
+    <button type="button" name="bubble">冒牌排序</button>
+    <button type="button" name="merge" disabled>归并排序</button>
+    <button type="button" name="bucket" disabled>快速排序</button>
+</form>
+<div class="aqi-display"></div>
+
+<script src="./scripts/task_19.js"></script>
+</body>
+</html>

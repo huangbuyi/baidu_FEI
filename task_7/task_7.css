@@ -1,0 +1,618 @@
+*{padding:0;margin:0;font-family:  "Microsoft YaHei", "微软雅黑", sans-serif;}
+ul{  list-style: none; }
+a{text-decoration: none; }
+body{
+    width:100%;
+    min-width: 1280px;
+    color:#fff;
+}
+
+
+header{
+    height:58px;
+}
+.logo{
+    float:left;
+    margin-left: 60px;
+}
+.logo img{
+    width:58px;
+    height:58px;
+    float:left;
+}
+.logo p{
+    font-size: 21px;
+    font-family: "黑体", "SimHei", "sans-serif";
+    color:#666;
+    float:left;
+    line-height: 58px;
+}
+nav{
+    float:right;
+    margin-right: 60px;
+
+}
+nav a{
+    height:55px;
+    font-size: 14px;
+    line-height: 54px;
+    padding:0 18px;
+    color:#787b83;
+    text-align: center;
+    display: inline-block;
+}
+nav a img{
+    width:18px;
+    height:18px;
+    float:left;
+    margin: 18px 3px 0 3px;
+    display: inline-block;
+}
+
+nav a.selected{
+    color:#e74f4d;
+    border-bottom: 4px solid #e74f4d;
+}
+nav a.login{
+    color:#e74f4d;
+}
+nav a:hover{
+    border-bottom: 4px solid #e74f4d;
+}
+
+
+
+.part1{
+    height:690px;
+    background: green;
+    background: url(./images/part1.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.part1 div{
+    display: inline-block;
+    margin-top:200px;
+    margin-left:110px;
+    color:#fff;
+}
+.part1 h1{
+    font-size:60px;
+    font-weight: normal;
+}
+.part1 h3{
+    font-size: 21px;
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.part1 button{
+    width:332px;
+    height:65px;
+    line-height: 65px;
+    font-size: 30px;
+    margin-top: 70px;
+    margin-left: 10px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    color:#fff;
+    background:#e74f4d;
+    border:0px;
+}
+
+
+
+
+.part2{
+    height:250px;
+
+}
+.part2 div{
+    width:25%;
+    height:250px;
+    float:left;
+}
+.part2 .img{
+    width:50px;
+    height:50px;
+    float:none;
+    margin:45px auto;
+}
+.part2 div:nth-child(1) .img{
+    background: url("./images/part2.png") no-repeat;
+    background-position: -5px -1px;
+}
+.part2 div:nth-child(2) .img{
+    background: url("./images/part2.png") no-repeat;
+    background-position: -60px -2px;
+}
+.part2 div:nth-child(3) .img{
+    background: url("./images/part2.png") no-repeat;
+    background-position: -114px -2px;
+}
+.part2 div:nth-child(4) .img{
+    background: url("./images/part2.png") no-repeat;
+    background-position: -167px -3px;
+}
+.part2 p{
+    color:#767777;
+    text-align: center;
+    width:100%;
+    height:50px;
+    font-size: 14px;
+    display: inline-block;
+    border-right: 2px solid #777;
+    font-family: "黑体","SimHei","sans-serif";
+}
+.part2 div:nth-child(4) p{
+    border-width: 0;
+}
+
+
+.part3{
+    height:360px;
+    width: 100%;
+    background: #eee;
+    display: inline-block;
+}
+.part3 img{
+    width:131px;
+    height:131px;
+    display: block;
+    margin:70px auto 15px auto;
+}
+.part3 h1{
+    font-size: 54px;
+    font-weight: normal;
+    text-align: center;
+    color:#aaa
+}
+
+
+.part4_cities{
+    position:relative;
+    height:340px;
+    width: 100%;
+    display: inline-block;
+    background: url(./images/part4.jpg) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.part4_cities h3{
+    margin-top: 50px;
+    display:block;
+}
+.separator{
+    height:3px;
+    width: 32px;
+    margin:12px auto 18px auto;
+    background: #fff;
+}
+.filter{
+    width:100%;
+    height:100%;
+    background: rgba(191,78,72,0.3);
+    display: inline-block;
+}
+.part4_cities form{
+    margin-top:50px;
+}
+.part4_cities select{
+    width:235px;
+    height:35px;
+    color:#aaa;
+    font-size: 12px;
+    padding:0 10px;
+    margin:0 10px;
+}
+.part4_cities select option{
+    //background: red;
+}
+.part4_cities button{
+    width:237px;
+    height:37px;
+    font-size: 14px;
+    letter-spacing: 30px;
+    text-indent: 30px;
+    background:#bf4e48 ;
+    border-width:0 ;
+    color:#fff;
+    margin:0 10px;
+}
+
+
+
+.part5{
+    height:606px;
+    width:100%;
+    display: inline-block;
+    background: #f7f7f7;
+    color:#000;
+}
+.part5 .center{
+    width:988px;
+    height:392px;
+    margin:108px auto;
+    display: block;
+}
+.center div{
+    width:25%;
+    height:100%;
+    float:left;
+}
+.center img{
+    width:204px;
+    height:306px;
+    padding: 15px 8px;
+    background: #fff;
+    display:block;
+    margin:0 auto;
+    box-shadow: 0 1px 0px 1px #ddd inset;
+}
+.center h4{
+    color:#000;
+    margin-top: 5px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 24px;
+    font-weight: normal;
+}
+.center div:nth-child(2) h4{
+    margin-top: 0;
+    font-size:22px;
+    text-indent: 20px;
+    letter-spacing: 20px;
+    line-height: 34px;
+}
+.center p{
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color:#999;
+}
+
+
+.part6{
+    height:565px;
+}
+.part6 .someGuys{
+    width: 66%;
+    height:100%;
+    background: url(./images/part6.jpg) no-repeat;
+    background-size:100% 100%;
+    float:left;
+}
+.someGuys h2, h1, h4{
+    text-align: center;
+    display: block;
+    font-weight: normal;
+}
+.someGuys h2{
+    margin-top: 130px;
+    font-size: 50px;
+}
+.someGuys h1{
+    margin-bottom: 28px;
+    font-size: 156px;
+    line-height: 120px;
+}
+.someGuys h4{
+    margin-top: 14px;
+    font-size: 22px;
+}
+.part6 .someText{
+    width:34%;
+    height:100%;
+    float:right;
+
+}
+.someText h4{
+    color:#333;
+    display: block;
+    margin-top:165px;
+    line-height: 21px;
+    font-size: 21px;
+    font-weight: normal;
+}
+.someText h4 .line{
+    display: inline-block;
+    margin: 0 5px;
+    transform: scale(2, 1);
+    font-weight: lighter;
+}
+.someText .redWord{
+    color:#e74f4d;
+}
+.someText p{
+    opacity: 0.7;
+    color:#999;
+    display: block;
+    width:288px;
+    font-size: 12px;
+    line-height:30px;
+    margin: 32px auto 0 auto;
+}
+.someText button{
+    width:104px;
+    height:32px;
+    color:#e74f4d;
+    background: #fff;
+    display: block;
+    margin:50px auto 0 auto;
+    border:1px solid #e74f4d;
+}
+.someText .circleBox{
+    width:62px;
+    height:12px;
+    margin:25px auto 0 auto;
+}
+.circleBox div{
+    height:10px;
+    width:10px;
+    border:1px solid #999;
+    border-radius: 6px;
+    float:left;
+}
+.circleBox div:nth-child(2){
+    margin:0 13px 0 13px;
+}
+.circleBox .selected{
+    background:#999;
+}
+.circleBox div:hover{
+    background: #ccc;
+}
+
+
+.part7{
+    height:520px;
+}
+.part7 div{
+    height:520px;
+    float:left;
+}
+.part7 h3{
+    width:170px;
+    margin:160px auto 0 auto;
+    font-size: 21px;
+    font-family: "SimHei","sans-serif";
+    font-weight: normal;
+    display:block;
+    text-align: center;
+}
+.part7 p{
+    width:32px;
+    height:2px;
+    background: #fff;
+    display:block;
+    margin:25px auto 25px auto;
+}
+.part7 button{
+    width:170px;
+    height:40px;
+    font-size: 21px;
+    font-family: "SimHei","sans-serif";
+    border:1px solid #fff;
+    background: #e74f4d;
+    color:#fff;
+    margin:0 auto;
+    display:block;
+}
+.part7 .left{
+    width:33%;
+    background: #e74f4d;
+}
+.part7 .middle{
+    width:33%;
+    background: #fff;
+}
+.middle{
+    color:#333;
+}
+.middle p{
+    background:#e74f4d ;
+}
+.middle button{
+    background: #fff;
+    border:1px solid #e74f4d;
+    color:#e74f4d;
+}
+.part7 .right{
+    width:34%;
+    background: url(./images/part7.jpg);
+    background-size: 100% 100%;
+}
+
+
+
+.part8_volunteer{
+    height:750px;
+    width:100%;
+    display: inline-block;
+}
+.part8_volunteer h4{
+    display: block;
+    font-size: 21px;
+    font-family: "黑体", "SimHei", sans-serif;
+    text-align: center;
+    margin-top:120px;
+    color:#231815;
+}
+.part8_volunteer .separator{
+    width:32px;
+    height:2px;
+    margin:10px auto 0 auto;
+    background:#e74f4d ;
+}
+.part8_volunteer p{
+    color:#999;
+    font-size:12px;
+    display: block;
+    text-align: center;
+    margin-top:15px;
+}
+.part8_volunteer .items{
+    width:40%;
+    margin-top: 98px;
+    float:left;
+    display: block;
+    height:450px;
+}
+.items h5{
+    float:right;
+    width:290px;
+    margin-right: 80px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "黑体", "SimHei", sans-serif;
+    color:#666;
+    text-align: left;
+}
+.items p{
+    float:right;
+    margin-top: 20px;
+    width:290px;
+    margin-right: 80px;
+    font-size: 12px;
+    line-height: 22px;
+    color:#aaa;
+    font-family: "宋体", "SimSun", Serif;
+    text-align: left;
+}
+.items .more{
+    margin-top: 0px;
+    text-align: right;
+    margin-bottom: 18px;
+}
+.more span{
+    writing-mode:vertical-lr;
+    transform: scale(2,1);
+}
+.part8_volunteer form input[type=text]{
+    width:280px;
+    height:42px;
+    padding:0 15px ;
+    float:left;
+    margin:0 20px 15px 0;
+    font-size:12px;
+    font-family: "宋体", "SimSun", Serif;
+    border-width:0;
+    color:#999;
+    background: #ededed;
+}
+.part8_volunteer form textarea{
+    width:610px;
+    height:104px;
+    padding:8px 15px ;
+    border-width:0;
+    font-size:12px;
+    font-family: "黑体", "SimHei", sans-serif;
+    color:#999;
+    background: #ededed;
+    margin-bottom: 10px;
+}
+.part8_volunteer form button{
+    width:640px;
+    height:42px;
+    border-width:0;.
+    color:#999;
+    background: #ededed;
+}
+
+.part8_volunteer form{
+    width:700px;
+    height:450px;
+    margin-top: 98px;
+    float:left;
+}
+
+
+.part9_contact{
+    height:390px;
+    width:100%;
+    background:#32363e;
+    display: inline-block;
+}
+.part9_contact h3{
+    display: block;
+    text-align: center;
+    margin-top:90px;
+    font-size: 21px;
+    font-family: "黑体", "SimHei", "sans-serif";
+}
+.part9_contact p{
+    display: block;
+    text-align: center;
+    margin-top:10px;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: "宋体", "SimSun", Serif;
+    color:#fff;
+}
+.part9_contact form{
+    width: 510px;
+    height:40px;
+    margin:30px auto 0 auto;
+}
+.part9_contact input[type=text]{
+    width:420px;
+    height:40px;
+    color:#ccc;
+    padding-left:10px ;
+    font-size: 14px;
+    border-width: 0;
+    float:left;
+}
+.part9_contact input[type=button]{
+    width:80px;
+    height:40px;
+    border-width: 0;
+    background: #707278;
+    color:#fff;
+    margin-left: 0;
+    float:left;
+}
+.part9_contact .outlink{
+    width:192px;
+    height:48px;
+    margin:30px auto 0 auto;
+    float:none;
+}
+.outlink div{
+    float:left;
+    width:48px;
+    height:48px;
+}
+.outlink .qq{
+    background: url(./images/part9.png);
+    background-position: -2px -2px;
+}
+.outlink .weibo{
+    background: url(./images/part9.png);
+    background-position: -55px -2px;
+}
+.outlink .feixin{
+    background: url(./images/part9.png);
+    background-position: -110px -2px;
+}
+.outlink .web{
+    background: url(./images/part9.png);
+    background-position: -159px -2px;
+}
+
+footer{
+    height:58px;
+    background:#2f2f38;
+}
+footer .copyRight{
+    font-size: 12px;
+    color:#fff;
+    font-family: "宋体", "SimSun", Serif;
+    float:left;
+    margin:24px 0 0 60px;
+}
+footer .toTop{
+    font-size: 12px;
+    color:#fff;
+    font-family: "宋体", "SimSun", Serif;
+    float:right;
+    margin:24px 60px 0 0;
+}
